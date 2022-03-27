@@ -5,7 +5,7 @@ import numpy as np
 
 app =Flask(__name__)
 
-loaded_model =  pickle.load(open('./classifyFishModel.sav', 'rb'))
+loaded_model =  pickle.load(open('./model/classifyFishModel.sav', 'rb'))
 cols = ['weight', 'length 1', 'length 2', 'length 3', 'height', 'width']
 species = {0: 'Bream',
  1: 'Parkki',
